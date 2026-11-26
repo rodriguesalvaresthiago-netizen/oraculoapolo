@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3ebdd;
+    color: #17263d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cabecalho {
+    background-color: #101d30;
+    color: #e8c17b;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #c6a15b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #e8c17b;
+}
+
+.logo h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.simbolo {
+    font-size: 42px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #f3ebdd;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.inicio {
+    min-height: 620px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: 
+        radial-gradient(circle at 80% 50%, #43536a, transparent 40%),
+        linear-gradient(120deg, #17263d, #263a56);
+
+    color: #f3ebdd;
+    position: relative;
+    overflow: hidden;    
+}
+
+.apresentacao {
+    max-width: 580px;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitulo {
+    color: #d6ad67;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.apresentacao h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 25px 0;
+    font-weight: normal;
+}
+
+.apresentacao h2 span {
+    color: #e8c17b;
+}
+
+.linha-decorativa {
+    color: #d6ad67;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.apresentacao p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #e2d9c9;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #c6a15b;
+    color: #17263d;
+    text-decoration: none;
+    padding: 17px 30px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #e8c17b;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px #c6a15b55;
+}
+
+.decoracao {
+    position: absolute;
+    color: #c6a15b;
+    opacity: 0.12;
+    font-size: 250px;
+}
+
+.decoracao-esquerda {
+    left: -70px;
+    bottom: -100px;
+}
+
+.imagem-apolo {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #c6a15b;
+    border-radius: 180px 180px 20px 20px;
+    background: 
+        linear-gradient(145deg, #d7c7a9, #8e7959);
+    box-shadow: 0 0 40px #00000050;
+    position: relative;
+    z-index: 1;    
+}
+
+.circulo-apolo {
+    width: 260px;
+    height: 260px;
+    border: 4px solid #c6a15b;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f3ebdd, #bda985);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #17263d;
+    box-shadow: 0 0 30px #e8c17b66;
+    animation: brilho 4s infinite alternate;
+}
+
+.circulo-apolo span {
+    font-size: 100px;
+    color: #b48a43;
+}
+
+.circulo-apolo p {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.circulo-apolo small {
+    margin-top: 8px;
+    letter-spacing: 3px;
+}
+
+.sobre {
+    padding: 90px 15%;
+    text-align: center;
+    background-color: #f3ebdd;
+}
+
+.sobre h2 {
+    font-size: 34px;
+    margin: 20px 0;
+    color: #17263d;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #55504a;
+}
+
+.area-conversa {
+    padding: 70px 15%;
+    background: linear-gradient(120deg, #17263d, #263a56);
+}
+
+.chat {
+    max-width: 850px;
+    margin: auto;
+    background-color: #101d30;
+    border: 2px solid #c6a15b;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px #00000040;
+}
+
+.chat-cabecalho {
+    background-color: #f3ebdd;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid #c6a15b;
+}
+
+.avatar-apolo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #c6a15b;
+    color: #17263d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    border: 3px solid #17263d;
+}
+
+.informacoes-apolo h2 {
+    font-size: 25px;
+}
+
+.informacoes-apolo p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.status {
+    margin-left: auto;
+    color: #287c42;
+    font-size: 15px;
+}
+
+.mensagens {
+    height: 370px;
+    overflow: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mensagem {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    max-width: 85%;
+    animation: aparecer 0.3s ease;
+}
+
+.mensagem-apolo {
+    align-self: flex-start;
+}
+
+.mensagem-usuario {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.avatar-pequeno {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #c6a15b;
+    color: #17263d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.texto-mensagem {
+    padding: 15px 20px;
+    border-radius: 18px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.mensagem-apolo .texto-mensagem {
+    background-color: #263a56;
+    color: #f3ebdd;
+    border-bottom-left-radius: 3px;
+}
+
+.mensagem-usuario .texto-mensagem {
+    background-color: #e8cda9;
+    color: #17263d;
+    border-bottom-right-radius: 3px;
+}
+
+.campo-mensagem {
+    display: flex;
+    gap: 12px;
+    padding: 15px 20px;
+}
+
+.campo-mensagem input {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #c6a15b;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    min-width: 0;
+}
+
+.campo-mensagem input::placeholder {
+    color: #b5a58e;
+}
+
+.campo-mensagem input:focus {
+    border-color: #e8c17b;
+}
+
+.campo-mensagem button {
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background-color: #c6a15b;
+    color: #17263d;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.campo-mensagem button:hover {
+    background-color: #e8c17b;
+    transform: scale(1.08);
+}
+
+.aviso {
+    text-align: center;
+    color: #a9a9a9;
+    font-size: 12px;
+    padding: 0 10px 20px;
+}
+
+footer {
+    background-color: #101d30;
+    color: #e8c17b;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #c6a15b;
+}
+
+
