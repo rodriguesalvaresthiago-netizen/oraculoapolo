@@ -365,4 +365,145 @@ footer {
     border-top: 2px solid #c6a15b;
 }
 
+footer p {
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+footer span {
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes brilho {
+    from {
+        box-shadow: 0 0 15px #e8c17b33;
+    }
+
+    to {
+        box-shadow: 0 0 40px #e8c17b99;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .cabecalho{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .apresentacao h2 {
+        font-size: 36px;
+    }
+
+    .imagem-apolo {
+        width: 280px;
+        height: 320px;
+    }
+
+    .circulo-apolo span {
+        font-size: 75px;
+    }
+
+    .sobre {
+        padding: 60px 8%;
+    }
+
+    .area-conversa {
+        padding: 50px 5%;
+    }
+
+    .mensagem {
+        max-width: 95%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .logo h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .apresentacao h2 {
+        font-size: 30px;
+    }
+
+    .chat-cabecalho {
+        padding: 15px;
+    }
+
+    .informacoes-apolo h2 {
+        font-size: 20px;
+    }
+
+    .informacoes-apolo p {
+        font-size: 11px;
+    }
+
+    .status {
+        font-size: 12px;
+    }
+
+    .mensagens {
+        height: 400px;
+        padding: 15px;
+    }
+
+    .texto-mensagem{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .avatar-pequeno {
+        overflow: hidden;
+    }
+
+    .avatar-pequeno img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+}
 
